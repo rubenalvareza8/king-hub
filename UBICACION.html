@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - KINGS-HUB</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('60.webp') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333; /* Negro */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header img {
+            height: 100px;
+            margin-left: 20px;
+        }
+        nav {
+            margin-right: 20px;
+        }
+        nav a {
+            color: #ff9800; /* Naranja */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc80; /* Naranja claro */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-top: 100px; /* Ensure content starts below the fixed header */
+        }
+        .location-container {
+            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .location-container h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .location-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .map-container {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="kings__1_-removebg-preview.png" alt="Logotipo de KINGS-HUB">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="REGISTRO.html">Regístrate</a>
+            <a href="INICIOSESION.html">Inicia Sesión</a>
+            <a href="MENU.html">Menú</a>
+            <a href="PROMOSSS.html">Promociones</a>
+            <a href="ubicacion.html">Ubicación</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="location-container">
+            <h2>Ubicación</h2>
+            <p>Nos encontramos en Calle Falsa 123, Ciudad. ¡Visítanos!</p>
+            <div class="map-container">
+                <!-- Aquí puedes insertar un iframe de Google Maps -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2529092945743!2d-122.08424968468172!3d37.4220657798255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5d6e1e43b13%3A0xf5e6f8c75b1a8e0c!2sGoogleplex!5e0!3m2!1sen!2sus!4v1605802312410!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    aria-hidden="false" 
+                    tabindex="0">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
